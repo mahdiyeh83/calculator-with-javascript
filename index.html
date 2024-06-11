@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <input type="text" id="texteara">
+        <button onclick="ins('1');ding()">1</button>
+        <button onclick="ins('2');ding()">2</button>
+        <button onclick="ins('3');ding()">3</button>
+        <button class="operator" onclick="ins('+');ding()">+</button>
+        <button onclick="ins('4');ding()">4</button>
+        <button onclick="ins('5');ding()">5</button>
+        <button onclick="ins('6');ding()">6</button>
+        <button class="operator" onclick="ins('-');ding()">-</button>
+        <button onclick="ins('7');ding()">7</button>
+        <button onclick="ins('8');ding()">8</button>
+        <button onclick="ins('9');ding()">9</button>
+        <button class="operator" onclick="ins('*');ding()">x</button>
+        <button onclick="ins('.');ding()">.</button>
+        <button onclick="ins('0');ding()">0</button>
+        <button onclick="clearDisplay() ;ding()">C</button>
+        <button class="operator" onclick="ins('/') ; ding()">÷</button>
+        <button class="equal" onclick="calculate();ding()">=</button>
+
+     
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
