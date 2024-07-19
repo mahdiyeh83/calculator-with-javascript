@@ -1,7 +1,6 @@
 
 let currentDisplay = "";
 let handelno = false;
-
 // getting number
 function formatNumber(number) {
   return new Intl.NumberFormat().format(number);
@@ -16,7 +15,6 @@ const arr = Array.from(buttons);
 arr.forEach((item) => {
   item.addEventListener("click", ding);
 });
-
 // operators
 function ins(val) {
   const operators = ["+", "-", "*", "/"];
@@ -44,7 +42,7 @@ function ins(val) {
         return;
       }
 
-      // Prevent entering consecutive operators
+      // entering consecutive operators
       if (operators.includes(val) && operators.includes(lastChar)) {
         return;
       }
